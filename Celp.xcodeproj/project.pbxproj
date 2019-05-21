@@ -14,9 +14,12 @@
 		49C71EF92257AA820035EF7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C71EF72257AA820035EF7D /* Main.storyboard */; };
 		49C71EFB2257AA840035EF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C71EFA2257AA840035EF7D /* Assets.xcassets */; };
 		49C71EFE2257AA840035EF7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C71EFC2257AA840035EF7D /* LaunchScreen.storyboard */; };
+		96A76BE7C6C987871E723DD2 /* Pods_Celp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CFB1906358B4CFD7E31167 /* Pods_Celp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23CFB1906358B4CFD7E31167 /* Pods_Celp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B481B56A850F10EF0CD7795 /* Pods-Celp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Celp/Pods-Celp.release.xcconfig"; sourceTree = "<group>"; };
 		49C71EEC2257AA820035EF7D /* Celp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Celp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C71EEF2257AA820035EF7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C71EF12257AA820035EF7D /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		49C71EFA2257AA840035EF7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C71EFD2257AA840035EF7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C71EFF2257AA840035EF7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B18FD92863B6FD663D993C9 /* Pods-Celp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Celp/Pods-Celp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A76BE7C6C987871E723DD2 /* Pods_Celp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CD0B9018082BC09D898F9BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B18FD92863B6FD663D993C9 /* Pods-Celp.debug.xcconfig */,
+				2B481B56A850F10EF0CD7795 /* Pods-Celp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0D415D7FAF8EF392F5DE38C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23CFB1906358B4CFD7E31167 /* Pods_Celp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49C71EE32257AA820035EF7D = {
 			isa = PBXGroup;
 			children = (
 				49C71EEE2257AA820035EF7D /* Celp */,
 				49C71EED2257AA820035EF7D /* Products */,
+				0CD0B9018082BC09D898F9BB /* Pods */,
+				0D415D7FAF8EF392F5DE38C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +84,8 @@
 			children = (
 				49C71EEF2257AA820035EF7D /* AppDelegate.swift */,
 				49C71EF12257AA820035EF7D /* RootViewController.swift */,
-				49C71EF32257AA820035EF7D /* DataViewController.swift */,
 				49C71EF52257AA820035EF7D /* ModelController.swift */,
+				49C71EF32257AA820035EF7D /* DataViewController.swift */,
 				49C71EF72257AA820035EF7D /* Main.storyboard */,
 				49C71EFA2257AA840035EF7D /* Assets.xcassets */,
 				49C71EFC2257AA840035EF7D /* LaunchScreen.storyboard */,
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49C71F022257AA840035EF7D /* Build configuration list for PBXNativeTarget "Celp" */;
 			buildPhases = (
+				8B937763AFEA045D384EE96F /* [CP] Check Pods Manifest.lock */,
 				49C71EE82257AA820035EF7D /* Sources */,
 				49C71EE92257AA820035EF7D /* Frameworks */,
 				49C71EEA2257AA820035EF7D /* Resources */,
+				8F1B62A32AB995CAE3D3D4E0 /* [CP] Embed Pods Frameworks */,
+				3DC574089A9FEBF9CF24CD9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DC574089A9FEBF9CF24CD9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Celp/Pods-Celp-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Celp/Pods-Celp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B937763AFEA045D384EE96F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Celp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F1B62A32AB995CAE3D3D4E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Celp/Pods-Celp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Celp/Pods-Celp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49C71EE82257AA820035EF7D /* Sources */ = {
@@ -288,6 +390,7 @@
 		};
 		49C71F032257AA840035EF7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B18FD92863B6FD663D993C9 /* Pods-Celp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +409,7 @@
 		};
 		49C71F042257AA840035EF7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B481B56A850F10EF0CD7795 /* Pods-Celp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
